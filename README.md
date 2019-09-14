@@ -1,4 +1,4 @@
-# Instagram-Follow-Bot
+# Instagram-Bot
 
 This is an instagram bot that was developed to follow, like, and comment on different instagram posts. This was a comissioned project I developed. With this project you will be able to easily auto assign proxies to different instagram accounts, create jobs for instagram accounts to gain a specific number of likes/follows/comments.
 
