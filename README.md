@@ -42,6 +42,7 @@ wget https://github.com/mozilla/geckodriver/releases/download/v0.25.0/geckodrive
 #### Windows
 
 First download the geckodriver [here](https://github.com/mozilla/geckodriver/releases), tested with version v0.24.0
+
 Then add geckodriver to your path [here's](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/) a tutorial on how to do that.
 
 ### Running the program
@@ -65,7 +66,9 @@ Examples of these files are below.
 ```
 
 **username** - This is where the instagram account's username goes.
+
 **password** - This is where the instagram account's password goes.
+
 **defaultComment** - This is what the default comment string will be for the instagram comments. Comment order is defaultComment + globalCommentString (mentioned later)
 
 **Example of inputs/proxies.json**
@@ -82,7 +85,9 @@ Examples of these files are below.
 ```
 
 **proxy-address** - This is the proxy IP that you want to be auto assigned to the new accounts in inputs/accounts.json.
+
 **proxy-port** - This is where the proxy port goes for the proxy server
+
 **Note** - It seems that the proxy servers work with only https servers.
 
 **Example of settings.json**
@@ -94,6 +99,7 @@ Examples of these files are below.
 ```
 
 **globalCommentString** - This is the variable that will be added onto EVERY comment by any account at the end.
+
 **headless** - Either True or False, tells the browser to do either headless or not. Default is False, because at least for chrome you can [detect chrome headless browsers](https://antoinevastel.com/bot%20detection/2017/08/05/detect-chrome-headless.html)
 
 **Example of jobs.json**
@@ -112,9 +118,13 @@ Examples of these files are below.
 ```
 
 **url** - Either a link to a specific user or a post. With a post you can specifiy like/comment, with an account you can follow as well.
+
 **amount_of_followers_to_gain** - The amount of followers you want that account to gain.
+
 **amount_of_likes_to_gain** - The amount of likes you want a post to gain.
+
 **amount_of_comments_to_gain** - The amount of comments you want a given post to gain.
+
 **Note** - Make sure you have enough accounts in data/pairedAccounts.json to handle the amount of followers/likes/comments to gain. It is limited to 1 per user.
 
 Once you have all of the json files configured as you would like simpily run the command below.
@@ -123,6 +133,7 @@ python main.py
 ```
 
 Then the bot will auto assign new accounts and proxies to eachother adding them to data/pairedAccounts.json and removing them from the input json files. 
+
 After that the bot will then log into accounts in random orders and complete the jobs.
 
 ## Built With
