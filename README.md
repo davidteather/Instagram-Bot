@@ -18,14 +18,14 @@ pip install -r requirements.txt
 
 You need to have firefox installed. Download [here](https://www.mozilla.org/en-US/firefox/new/)
 
-#### Linux
+### Linux
 ```
 sudo apt install firefox
 ```
 
 You also need to download geckodriver and include it in your path. Download it [here](https://github.com/mozilla/geckodriver/releases)
 
-#### Linux
+### Linux
 ```
 wget https://github.com/mozilla/geckodriver/releases/download/v0.25.0/geckodriver-v0.25.0-linux64.tar.gz -O /tmp/geckodriver.tar.gz 
 tar -C /opt -xzf /tmp/geckodriver.tar.gz 
@@ -39,18 +39,18 @@ or the combined command
 wget https://github.com/mozilla/geckodriver/releases/download/v0.25.0/geckodriver-v0.25.0-linux64.tar.gz -O /tmp/geckodriver.tar.gz && tar -C /opt -xzf /tmp/geckodriver.tar.gz && sudo chmod 755 /opt/geckodriver && sudo ln -fs /opt/geckodriver /usr/bin/geckodriver && sudo ln -fs /opt/geckodriver /usr/local/bin/geckodriver
 ```
 
-#### Windows
+### Windows
 
 First download the geckodriver [here](https://github.com/mozilla/geckodriver/releases), tested with version v0.24.0
 
 Then add geckodriver to your path [here's](https://helpdeskgeek.com/windows-10/add-windows-path-environment-variable/) a tutorial on how to do that.
 
-### Running the program
+## Running the program
 
 To run the software you first need to add information into the inputs/accounts.json, inputs/proxies.json, jobs.json, and settings.json.
 Examples of these files are below.
 
-#### **Example inputs/acounts.json**
+### **Example inputs/acounts.json**
 ```
 [{
         "username": "instagramUsername",
@@ -71,7 +71,7 @@ Examples of these files are below.
 
 **defaultComment** - This is what the default comment string will be for the instagram comments. Comment order is defaultComment + globalCommentString (mentioned later)
 
-#### **Example of inputs/proxies.json**
+### **Example of inputs/proxies.json**
 ```
 [{
         "proxy-address": "xx.xxx.xxx.xxxx",
@@ -90,7 +90,7 @@ Examples of these files are below.
 
 **Note** - It seems that the proxy servers work with only https servers.
 
-#### **Example of settings.json**
+### **Example of settings.json**
 ```
 {
     "globalCommentString": "End_Of_Every_Comment",
@@ -102,7 +102,7 @@ Examples of these files are below.
 
 **headless** - Either True or False, tells the browser to do either headless or not. Default is False, because at least for chrome you can [detect chrome headless browsers](https://antoinevastel.com/bot%20detection/2017/08/05/detect-chrome-headless.html)
 
-#### **Example of jobs.json**
+### **Example of jobs.json**
 ```
 [
     {
