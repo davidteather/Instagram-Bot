@@ -127,6 +127,8 @@ Examples of these files are below.
 
 **Note** - Make sure you have enough accounts in data/pairedAccounts.json to handle the amount of followers/likes/comments to gain. It is limited to 1 per user.
 
+### Executing the program
+
 Once you have all of the json files configured as you would like simpily run the command below.
 ```
 python main.py
