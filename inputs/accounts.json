@@ -1,0 +1,11 @@
+[{
+        "username": "instagramUsername",
+        "password": "instagramPassword",
+        "defaultComment": "defaultMessageThisAccountComments"
+    },
+    {
+        "username": "instagramUsername2",
+        "password": "instagramPassword2",
+        "defaultComment": "defaultMessageThisAccountComments2"
+    }
+]
